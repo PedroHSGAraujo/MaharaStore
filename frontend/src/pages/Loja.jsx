@@ -8,11 +8,11 @@ import { NewsLetter } from '../components/newsletter/NewsLetter'
 export const Loja = () => {
   return (
     <div>
-      <Hero/>
-      <Popular/>
-      <Offers/>
-      <NewCollections/>
-      <NewsLetter/>
+      <Hero />
+      <Popular />
+      <Offers />
+      <NewCollections />
+      <NewsLetter />
     </div>
   )
 }

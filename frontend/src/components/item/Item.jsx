@@ -5,16 +5,16 @@ import { Link } from 'react-router-dom'
 export const Item = (props) => {
   return (
     <div className='item'>
-        <Link to={`/produto/${props.id}`}><img onClick={window.scrollTo(0,0)} src={props.image} alt="" /></Link>
-        <p>{props.name}</p>
-        <div className="item-prices">
-            <div className="item-price-new">
-                R${props.new_price}
-            </div>
-            <div className="item-price-old">
-                R${props.old_price}
-            </div>
+      <Link to={`/produto/${props.id}`}><img onClick={window.scrollTo(0, 0)} src={props.image} alt="" /></Link>
+      <p>{props.name}</p>
+      <div className="item-prices">
+        <div className="item-price-new">
+          R${props.new_price}
         </div>
+        <div className="item-price-old">
+          R${props.old_price}
+        </div>
+      </div>
     </div>
   )
 }

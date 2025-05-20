@@ -1,0 +1,10 @@
+front-end página shop terminado!
+01:22:40
+
+front-end da página de registro e de categoria terminado + breadcrumbs
+01:54:25
+
+front-end da pagina de produto completo e mecanica de alterar a variável do objeto adicionado ao carrinho foi feita
+02:30:51
+
+https://www.youtube.com/watch?v=y99YgaQjgx4
