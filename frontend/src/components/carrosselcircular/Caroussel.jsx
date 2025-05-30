@@ -27,29 +27,25 @@ export const Caroussel = () => {
     return (
         <div className="caroussel-wrapper">
             <Swiper
-                spaceBetween={236}
-                slidesPerView={3}
+                spaceBetween={30}
+                slidesPerView={5}
                 modules={[Navigation, Pagination]}
-                navigation={{ clickable: true }}
-                loop={{ loop: true }}
+                navigation={{
+                    nextEl: '.custom-swiper-button-next',
+                    prevEl: '.custom-swiper-button-prev'
+                }}
                 breakpoints={{
                     0: {
                         slidesPerView: 4,
                         spaceBetween: 10,
                     },
-                    499: {
-                        slidesPerView: 4,
-                        spaceBetween: 50,
-                    },
-                    799: {
-                        slidesPerView: 3,
-                        spaceBetween: 130,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 205,
+                    399: {
+                        slidesPerView: 5,
+                        spaceBetween: 30,
                     },
                 }}
+
+                loop={{ loop: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
@@ -58,11 +54,21 @@ export const Caroussel = () => {
                         <div className="itemm">
                             <Link to={d.link}><img src={d.src} alt={d.title} className="w-[150px] h-auto object-contain" /></Link>
                             <p>{d.title}</p>
-                            
+
                         </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <div className="custom-swiper-button-prev">
+                <p>
+                    ‹
+                </p>
+            </div>
+            <div className="custom-swiper-button-next">
+                <p>
+                    ›
+                </p>
+            </div>
         </div>
     );
 }

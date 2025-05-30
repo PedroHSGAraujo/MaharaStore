@@ -60,7 +60,9 @@
 }
 
 .hero-right img {
-    border-radius: 1000px;
+    height: auto;
+    width: 610px;
+    border-radius: 50%;
 }
 
 @media(max-width: 1280px){
