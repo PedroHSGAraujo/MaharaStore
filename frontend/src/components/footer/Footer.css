@@ -24,6 +24,7 @@
     gap: 50px;
     color: #252525;
     font-size: 20px;
+    padding-left: 0px;
 }
 
 .footer-links li {
@@ -91,4 +92,8 @@
     .footer-copyright {
         font-size: 13px;
     }
+}
+
+@media(max-width: 400) {
+
 }

@@ -1,6 +1,6 @@
 .hero {
     height: 100vh;
-    background: linear-gradient(180deg, #fde1FF, #e1ffea22 60%);
+    background: linear-gradient(180deg, #dbc497, #e1ffea22 60%);
     display: flex;
 }
 
@@ -46,7 +46,7 @@
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background: #ff4141;
+    background: #dbc497;
     color: white;
     font-size: 22px;
     font-weight: 500;
@@ -57,6 +57,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero-right img {
+    border-radius: 1000px;
 }
 
 @media(max-width: 1280px){
@@ -147,32 +151,6 @@
 
 @media(max-width: 500px){
     .hero {
-        flex-direction: column;
-    }
-
-    .hero-right {
         display: none;
-    }
-
-    .hero-left h2 {
-        font-size: 18px;
-    }
-
-    .hero-left {
-        padding-left: 30px;
-    }
-
-    .hero-left p {
-        font-size: 50px;
-    }
-
-    .hero-hand-icon img {
-        width: 55px;
-    }
-
-    .hero-latest-btn {
-        width: 200px;
-        height: 45px;
-        font-size: 14px;
     }
 }

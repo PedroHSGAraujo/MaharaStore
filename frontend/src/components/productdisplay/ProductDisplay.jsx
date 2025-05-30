@@ -38,8 +38,6 @@ export const ProductDisplay = (props) => {
                 </div>
                 <div className="productdisplay-right-description">
                     Mussum Ipsum, cacilds vidis litro abertis.  Morbi viverra placerat justo, vel pharetra turpis.
-                    Pellentesque nec nulla ligula. Donec gravida turpis a vulputate ultricies. Sapien in monti palavris qui num significa nadis i pareci latim.
-                    Delegadis gente finis, bibendum egestas augue arcu ut est.
                 </div>
                 <div className="productdisplay-right-size">
                     <h1>Selecionar Tamanho</h1>
@@ -51,7 +49,7 @@ export const ProductDisplay = (props) => {
                         <div>G1</div>
                     </div>
                 </div>
-                <button onClick={() => { addToCart(product.id) }}>ADD AO CARRINHO</button>
+                <button onClick={() => { addToCart(product.id) }}>Adicionar ao carrinho</button>
                 <p className='productdisplay-right-category'><span>Categoria: </span>Pulseira</p>
                 <p className='productdisplay-right-category'><span>Tags: </span>Recente, Verão</p>
             </div>

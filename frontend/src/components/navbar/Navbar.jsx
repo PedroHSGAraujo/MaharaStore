@@ -19,8 +19,10 @@ export const Navbar = () => {
     return (
         <div className='navbar'>
             <div className="nav-logo">
-                <img src={logo} alt="" />
-                <p>MAHARA</p>
+                <Link to='/'>
+                    <img onClick={() => { setMenu("loja") }} src={logo} alt="" />
+                </Link>
+                <p></p>
             </div>
             <img className="nav-dropdown" onClick={dropdown_toggle} src={nav_dropdown} alt="" />
             <ul ref={menuRef} className='nav-menu'>

@@ -26,6 +26,7 @@
     color: #626262;
     font-size: 20px;
     font-weight: 500;
+    z-index: 2 !important;
 }
 
 .nav-menu li {
@@ -42,7 +43,7 @@
     width: 80%;
     height: 3px;
     border-radius: 10px;
-    background: #FF4141;
+    background: #dbc497;
 }
 
 .nav-login-cart {
@@ -191,6 +192,7 @@
     .nav-menu {
         height: 70px;
         top: 50px;
+        padding: 0px;
     }
 
     .nav-login-cart {
@@ -211,6 +213,11 @@
     .nav-menu {
         height: 70px;
         top: 50px;
+        padding: 0px;
+    }
+
+    .nav-menu-visible {
+        display: flex;
     }
 
     .nav-login-cart {

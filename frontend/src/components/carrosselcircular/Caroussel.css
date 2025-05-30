@@ -1,0 +1,136 @@
+.caroussel-wrapper {
+    width: 82.2%;
+    height: 430px;
+    display: flex;
+    margin: auto;
+    background: white;
+    z-index: -1 !important;
+}
+
+.itemm {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemm p {
+    margin-left: 10px;
+}
+
+.caroussel-wrapper img {
+    border-radius: 100%;
+    height: 350px;
+    width: 350px;
+    margin: auto;
+}
+
+.caroussel-wrapper .swiper {
+    padding-left: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+.swiper-button-prev {
+    left: -60px;
+    /* joga para fora do conteúdo */
+}
+
+.swiper-button-next {
+    right: -30px;
+}
+
+@media(max-width: 1280px) {
+    .caroussel-wrapper {
+        width: 95%;
+    }
+
+    .caroussel-wrapper img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .itemm p {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .caroussel-wrapper {
+        width: 100%;
+    }
+
+    .caroussel-wrapper img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .itemm p {
+        margin-left: 70px;
+    }
+}
+
+@media(max-width: 800px) {
+    .caroussel-wrapper {
+        width: 100%;
+    }
+
+    .caroussel-wrapper img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .itemm p {
+        margin-left: 25px;
+    }
+}
+
+@media(max-width: 500px) {
+    .caroussel-wrapper {
+        width: 100%;
+        height: 150px;
+    }
+
+    .caroussel-wrapper img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .swiper-button-prev {
+        filter: none;
+        display: none !important;
+    }
+
+    .swiper-button-next {
+        filter: none;
+        display: none !important;
+    }
+
+    .itemm p {
+        font-size: 12px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 400px) {
+    .caroussel-wrapper img {
+        margin-top: 0px;
+        margin-right: 13px;
+        height: 70px;
+        width: 70px;
+    }
+    .itemm p {
+        margin-top: 0px;
+        font-size: 14px;
+        margin-left: 0px;
+    }
+}
